@@ -1,5 +1,6 @@
 name: 'Bump CDK'
-description: ''
+description: 'Action for creating pull requests to bump aws cdk dependencies'
+author: cdk-tools
 inputs:
   working-directory:
     description: 'Sets the working directory'
