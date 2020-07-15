@@ -2,6 +2,12 @@ name: 'Bump CDK'
 description: 'Action for creating pull requests to bump aws cdk dependencies'
 author: cdk-tools
 inputs:
+  github-token:
+    description: the github auth token
+    required: true
+  branch:
+    description: the branch to commit to
+    required: false
   working-directory:
     description: 'Sets the working directory'
     required: false
@@ -14,6 +20,10 @@ inputs:
 outputs:
   version:
     description: 'The version of CDK that the project has been set to'
+  pullNumber:
+    description: the pull request number
+  commitSha:
+    description: the sha of the commit
 runs:
   using: 'node12'
   main: 'dist/index.js'
