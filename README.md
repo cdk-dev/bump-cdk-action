@@ -29,4 +29,3 @@ Explicit Version
 Strategy
 
 Pattern
-
